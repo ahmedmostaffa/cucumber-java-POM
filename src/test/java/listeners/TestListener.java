@@ -21,13 +21,14 @@ public class TestListener  extends BaseTest implements  ITestListener{
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-	}
-
+	
+	}	
+	
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
 		Shutterbug.shootPage(driver).save();;
-		//log.info("take screenshot for failed tests");
+		System.out.println("take screenshot on faield tests");
 	}
 
 	@Override

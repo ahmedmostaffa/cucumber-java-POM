@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 05 12:49:24 EET 2022</td>
+<td>Started on:</td><td>Wed Sep 07 15:32:10 EET 2022</td>
 </tr>
-<tr><td>Total time:</td><td>10 seconds (10991 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2584 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,140 +77,46 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check the login functionality with multiple username and Password", "As a user I want to login with username and password"</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression &quot;//*[@id=&apos;login_button_container&apos;]/div/form/div[3]/h3/text()&quot; is: [object Text]. It should be an element.
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;LPCAIQ0797&apos;, ip: &apos;192.168.9.150&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f399cd8d110c0c68fe829ae0333c506, findElement {using=xpath, value=//*[@id=&apos;login_button_container&apos;]/div/form/div[3]/h3/text()}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AMMABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62145/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f399cd8d110c0c68fe829ae0333c506
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at Pages.LoginPage.getErrorMessage(LoginPage.java:22)
-	at stepDefinitions.LoginSteps.error_message_will_be_displayed(LoginSteps.java:27)
-	at ✽.error message will be displayed(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:17)
-</pre></div><a href='#' onClick='toggleBox("stack-trace783130773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace783130773'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression &quot;//*[@id=&apos;login_button_container&apos;]/div/form/div[3]/h3/text()&quot; is: [object Text]. It should be an element.
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;LPCAIQ0797&apos;, ip: &apos;192.168.9.150&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f399cd8d110c0c68fe829ae0333c506, findElement {using=xpath, value=//*[@id=&apos;login_button_container&apos;]/div/form/div[3]/h3/text()}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AMMABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62145/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f399cd8d110c0c68fe829ae0333c506
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at Pages.LoginPage.getErrorMessage(LoginPage.java:22)
-	at stepDefinitions.LoginSteps.error_message_will_be_displayed(LoginSteps.java:27)
-	at ✽.error message will be displayed(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:17)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at Pages.LoginPage.SetLoginCredentials(LoginPage.java:25)
+	at stepDefinitions.LoginSteps.user_enter_username_and_password(LoginSteps.java:19)
+	at ✽.user enter username &quot;sda&quot; and Password &quot;admin12DAdad&quot;(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:14)
+</pre></div><a href='#' onClick='toggleBox("stack-trace515520300", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace515520300'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at Pages.LoginPage.SetLoginCredentials(LoginPage.java:25)
+	at stepDefinitions.LoginSteps.user_enter_username_and_password(LoginSteps.java:19)
+	at ✽.user enter username &quot;sda&quot; and Password &quot;admin12DAdad&quot;(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:14)
 </pre></div></td>
 <td>0</td>
-<td>Runner.TestRunner@3b69e7d1</td></tr>
-<tr>
-<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check the login functionality with multiple username and Password", "As a user I want to login with username and password"</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression &quot;//*[@id=&apos;login_button_container&apos;]/div/form/div[3]/h3/text()&quot; is: [object Text]. It should be an element.
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;LPCAIQ0797&apos;, ip: &apos;192.168.9.150&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da7665fba71adf64ad6dab6b37043ab8, findElement {using=xpath, value=//*[@id=&apos;login_button_container&apos;]/div/form/div[3]/h3/text()}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AMMABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62168/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: da7665fba71adf64ad6dab6b37043ab8
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at Pages.LoginPage.getErrorMessage(LoginPage.java:22)
-	at stepDefinitions.LoginSteps.error_message_will_be_displayed(LoginSteps.java:27)
-	at ✽.error message will be displayed(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:17)
-</pre></div><a href='#' onClick='toggleBox("stack-trace294309744", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace294309744'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression &quot;//*[@id=&apos;login_button_container&apos;]/div/form/div[3]/h3/text()&quot; is: [object Text]. It should be an element.
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;LPCAIQ0797&apos;, ip: &apos;192.168.9.150&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da7665fba71adf64ad6dab6b37043ab8, findElement {using=xpath, value=//*[@id=&apos;login_button_container&apos;]/div/form/div[3]/h3/text()}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AMMABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62168/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: da7665fba71adf64ad6dab6b37043ab8
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at Pages.LoginPage.getErrorMessage(LoginPage.java:22)
-	at stepDefinitions.LoginSteps.error_message_will_be_displayed(LoginSteps.java:27)
-	at ✽.error message will be displayed(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:17)
-</pre></div></td>
-<td>0</td>
-<td>Runner.TestRunner@3b69e7d1</td></tr>
+<td>Runner.TestRunner@77c2494c</td></tr>
 <tr>
 <td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check the login functionality", "As a user I want to login with username and password"</td>
-<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertFalse(Assert.java:78)
-	at org.testng.Assert.assertFalse(Assert.java:88)
-	at stepDefinitions.LoginSteps.user_is_navigated_to_the_dashboard_page(LoginSteps.java:32)
-	at ✽.user is navigated to the dashboard page(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace690070378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace690070378'><pre>java.lang.AssertionError: expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertFalse(Assert.java:78)
-	at org.testng.Assert.assertFalse(Assert.java:88)
-	at stepDefinitions.LoginSteps.user_is_navigated_to_the_dashboard_page(LoginSteps.java:32)
-	at ✽.user is navigated to the dashboard page(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:9)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at Pages.LoginPage.SetLoginCredentials(LoginPage.java:25)
+	at stepDefinitions.LoginSteps.user_enter_username_and_password(LoginSteps.java:19)
+	at ✽.user enter username &quot;standard_user&quot; and Password &quot;secret_sauce&quot;(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace808447015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace808447015'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at Pages.LoginPage.SetLoginCredentials(LoginPage.java:25)
+	at stepDefinitions.LoginSteps.user_enter_username_and_password(LoginSteps.java:19)
+	at ✽.user enter username &quot;standard_user&quot; and Password &quot;secret_sauce&quot;(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:8)
 </pre></div></td>
 <td>0</td>
-<td>Runner.TestRunner@3b69e7d1</td></tr>
+<td>Runner.TestRunner@77c2494c</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check the login functionality with multiple username and Password", "As a user I want to login with username and password"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at Pages.LoginPage.SetLoginCredentials(LoginPage.java:25)
+	at stepDefinitions.LoginSteps.user_enter_username_and_password(LoginSteps.java:19)
+	at ✽.user enter username &quot;Admin&quot; and Password &quot;admin1ADada&quot;(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:14)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1004009692", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1004009692'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at Pages.LoginPage.SetLoginCredentials(LoginPage.java:25)
+	at stepDefinitions.LoginSteps.user_enter_username_and_password(LoginSteps.java:19)
+	at ✽.user enter username &quot;Admin&quot; and Password &quot;admin1ADada&quot;(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:14)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@77c2494c</td></tr>
 </table><p>
 </body>
 </html>
