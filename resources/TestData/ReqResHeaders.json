@@ -1,0 +1,7 @@
+{
+    "GET_SINGLE_USER":"users/2",
+    "GET_LIST_USERS":{
+        "header":"users","queryParamter":"?page=2"
+    }
+
+}

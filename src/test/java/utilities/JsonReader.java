@@ -52,11 +52,22 @@ public class JsonReader {
 		}
 		return null;
 	}
+	public static JSONObject getJsonObject(String fileName){
+		try {
+			JSONParser jsonParser = new JSONParser();
+			FileReader reader = new FileReader(".\\resources\\TestData\\"+fileName+".json");
+			Object obj=jsonParser.parse(reader);
+			JSONObject jsonObject=(JSONObject) obj;
+			return jsonObject;
+		}catch (Exception e) {
+			e.fillInStackTrace();
+		}
+		return null;
+	}
 	
 	public static void main(String[] args) {
-		System.out.println(getValue("RegitserFile","email"));
-		System.out.println(getJsonObject("RegitserFile","location").toString());
-		System.out.println(getJsonArray("RegitserFile","hobbies"));
+		System.out.println(getValue("Headers","POST"));
+
 	}
 	
 

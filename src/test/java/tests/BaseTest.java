@@ -25,7 +25,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import static java.time.Duration.*;
 
 
-public class BaseTest  {
+public class BaseTest extends AbstractTestNGCucumberTests  {
 	public static WebDriver driver;
 
 

@@ -9,19 +9,20 @@ import io.cucumber.testng.CucumberOptions;
 import listeners.TestListener;
 import listeners.TransformAnno;
 
+import tests.BaseApiTest;
 import tests.BaseTest;
 
 //@Listeners({TestListener.class,TransformAnno.class})
 
 @CucumberOptions(features="src/test/java/features"
 	,glue={"stepDefinitions"}
-	,monochrome=false
+	,monochrome=true
 	,plugin={"html:target/cucumber.html"}
-	,tags= "@smoke"
+	,tags= "@post"
 	,publish=true
 )
 
 
-public class TestRunner extends AbstractTestNGCucumberTests  {
+public class TestRunner extends BaseApiTest {
 	
 }
