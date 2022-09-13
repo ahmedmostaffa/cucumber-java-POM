@@ -1,4 +1,0 @@
-{
-  "POST" : "/api-clients/",
-  "GET_LIST_OF_BOOKS": "/books"
-}
