@@ -20,6 +20,7 @@
 
 	<dependencies>
 
+		
 		<!-- json simple kit -->
 		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
 		<dependency>
@@ -40,9 +41,8 @@
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>4.0.0</version>
+			<version>5.1.1</version>
 		</dependency>
-
 
 
 

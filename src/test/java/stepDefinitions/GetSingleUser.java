@@ -34,6 +34,7 @@ public void request_method_is_set_to_get() {
 
 @Then("the response status code is {int}")
 public void the_response_status_code_is(Integer int1) {
+
     
 	
 }

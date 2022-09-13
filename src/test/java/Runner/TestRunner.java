@@ -2,9 +2,10 @@ package Runner;
 
 
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.testng.annotations.Listeners;
 
-import io.cucumber.testng.AbstractTestNGCucumberTests;
+
 import io.cucumber.testng.CucumberOptions;
 import listeners.TestListener;
 import listeners.TransformAnno;
@@ -14,15 +15,16 @@ import tests.BaseTest;
 
 //@Listeners({TestListener.class,TransformAnno.class})
 
+
 @CucumberOptions(features="src/test/java/features"
 	,glue={"stepDefinitions"}
 	,monochrome=true
-	,plugin={"html:target/cucumber.html"}
-	,tags= "@post"
+	,plugin={"json:target/cucumber.json"}
+	,tags= "@login"
 	,publish=true
 )
 
 
-public class TestRunner extends BaseApiTest {
-	
+public class TestRunner extends AbstractTestNGCucumberTests {
+
 }

@@ -18,7 +18,7 @@ public class LoginPageFactory {
     @FindBy(css = "input#password")
       WebElement password;
 
-    @FindBy
+    @FindBy(xpath = "//*[@id=\"login_button_container\"]/div/form/div[3]/h3")
       WebElement errorMessage;
 
     public LoginPageFactory(WebDriver driver) {

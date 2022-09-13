@@ -16,7 +16,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import static io.restassured.RestAssured.given;
 
-public class CreatePostSteps extends BaseApiTest {
+public class CreatePostSteps {
     RequestSpecification response;
     @Given("base URL is set from")
     public void baseURLIsSetFrom() {
@@ -25,7 +25,7 @@ public class CreatePostSteps extends BaseApiTest {
 
     @And("request header set to value from")
     public void requestHeaderSetToValueFrom() {
-        response.post(JsonReader.getValue("Headers","POST").toString());
+        response.given().when().post(JsonReader.getValue("Headers","POST").toString());
         
     }
 
@@ -36,7 +36,7 @@ public class CreatePostSteps extends BaseApiTest {
 
     @Then("response status code should be {int}")
     public void responseStatusCodeShouldBe(int arg0) {
-        
+        response.then().statusCode(arg0);
        
       
             

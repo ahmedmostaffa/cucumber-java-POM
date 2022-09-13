@@ -12,10 +12,10 @@ import org.json.simple.parser.ParseException;
 public class JsonReader {
 	private JsonReader() {}
 	
-	public static String getValue(String fileName,String key)  {
+	public static String getValue(String filePath,String key)  {
 		try {
 			JSONParser jsonParser = new JSONParser();
-			FileReader reader = new FileReader(".\\resources\\TestData\\"+fileName+".json");
+			FileReader reader = new FileReader(filePath);
 			Object obj=jsonParser.parse(reader);
 			JSONObject jsonObject=(JSONObject) obj;
 			String value=jsonObject.get(key).toString();
@@ -27,10 +27,23 @@ public class JsonReader {
 		}
 		return null;
 	}
-	public static JSONObject getJsonObject(String fileName,String key) {
+
+	public static JSONArray getJsonArray(String filePath){
 		try {
 			JSONParser jsonParser = new JSONParser();
-			FileReader reader = new FileReader(".\\resources\\TestData\\"+fileName+".json");
+			FileReader reader = new FileReader(filePath);
+			Object obj=jsonParser.parse(reader);
+			JSONArray jsonArray=(JSONArray) obj;
+			return jsonArray;
+		}catch (Exception e) {
+			e.fillInStackTrace();
+		}
+		return null;
+	}
+	public static JSONObject getJsonObject(String filePath,String key) {
+		try {
+			JSONParser jsonParser = new JSONParser();
+			FileReader reader = new FileReader(filePath);
 			Object obj=jsonParser.parse(reader);
 			JSONObject jsonObject=(JSONObject) obj;
 			return (JSONObject) jsonObject.get(key);
@@ -39,10 +52,10 @@ public class JsonReader {
 		}
 		return null;
 	}
-	public static JSONArray getJsonArray(String fileName, String key) {
+	public static JSONArray getJsonArray(String filePath, String key) {
 		try {
 			JSONParser jsonParser = new JSONParser();
-			FileReader reader = new FileReader(".\\resources\\TestData\\"+fileName+".json");
+			FileReader reader = new FileReader(filePath);
 			Object obj=jsonParser.parse(reader);
 			JSONObject jsonObject=(JSONObject) obj;
 			JSONArray jsonArray=(JSONArray) jsonObject.get(key);
@@ -52,10 +65,10 @@ public class JsonReader {
 		}
 		return null;
 	}
-	public static JSONObject getJsonObject(String fileName){
+	public static JSONObject getJsonObject(String filePath){
 		try {
 			JSONParser jsonParser = new JSONParser();
-			FileReader reader = new FileReader(".\\resources\\TestData\\"+fileName+".json");
+			FileReader reader = new FileReader(filePath);
 			Object obj=jsonParser.parse(reader);
 			JSONObject jsonObject=(JSONObject) obj;
 			return jsonObject;
@@ -66,8 +79,7 @@ public class JsonReader {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(getValue("Headers","POST"));
-
+		System.out.println(getJsonArray(".//resources//TestData//MOCK_DATA.json").toArray()[0]);
 	}
 	
 
