@@ -1,6 +1,0 @@
-Pages\LoginPage.class
-Runner\TestRunner.class
-tests\BaseTest.class
-Pages\BasePage.class
-stepDefinitions\LoginSteps.class
-Pages\DashboardPage.class

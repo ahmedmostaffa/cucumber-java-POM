@@ -1,38 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-05T12:49:24 EET" name="Default suite" finished-at="2022-09-05T12:49:35 EET" duration-ms="10991">
+  <suite started-at="2022-09-14T19:29:05 EET" name="Suite" finished-at="2022-09-14T19:29:27 EET" duration-ms="21907">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@3b69e7d1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@4116aac9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-05T12:49:24 EET" name="Default test" finished-at="2022-09-05T12:49:35 EET" duration-ms="10991">
+    <test started-at="2022-09-14T19:29:05 EET" name="Test1" finished-at="2022-09-14T19:29:27 EET" duration-ms="21907">
       <class name="Runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunner@3b69e7d1]" started-at="2022-09-05T12:49:24 EET" name="setUpClass" finished-at="2022-09-05T12:49:25 EET" duration-ms="524" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunner@4116aac9]" started-at="2022-09-14T19:29:05 EET" name="setUpClass" finished-at="2022-09-14T19:29:06 EET" duration-ms="968" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@525647f3]]>
+                <![CDATA[org.testng.TestRunner@a84338a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Runner.TestRunner@3b69e7d1]" started-at="2022-09-05T12:49:25 EET" name="SetUp" finished-at="2022-09-05T12:49:29 EET" duration-ms="4024" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:Runner.TestRunner@4116aac9]" started-at="2022-09-14T19:29:06 EET" name="SetUp" finished-at="2022-09-14T19:29:13 EET" duration-ms="6993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@3b69e7d1]" started-at="2022-09-05T12:49:29 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-05T12:49:29 EET" duration-ms="367" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@4116aac9]" started-at="2022-09-14T19:29:13 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T19:29:13 EET" duration-ms="696" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,40 +38,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at stepDefinitions.LoginSteps.user_is_navigated_to_the_dashboard_page(LoginSteps.java:32)
-at ✽.user is navigated to the dashboard page(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner.TestRunner@3b69e7d1]" started-at="2022-09-05T12:49:29 EET" name="tearDown" finished-at="2022-09-05T12:49:30 EET" duration-ms="367" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner.TestRunner@4116aac9]" started-at="2022-09-14T19:29:13 EET" name="tearDown" finished-at="2022-09-14T19:29:14 EET" duration-ms="604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Runner.TestRunner@3b69e7d1]" started-at="2022-09-05T12:49:30 EET" name="SetUp" finished-at="2022-09-05T12:49:32 EET" duration-ms="1846" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:Runner.TestRunner@4116aac9]" started-at="2022-09-14T19:29:14 EET" name="SetUp" finished-at="2022-09-14T19:29:18 EET" duration-ms="4411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@3b69e7d1]" started-at="2022-09-05T12:49:32 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-05T12:49:32 EET" duration-ms="214" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@4116aac9]" started-at="2022-09-14T19:29:18 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T19:29:19 EET" duration-ms="380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,67 +62,18 @@ at ✽.user is navigated to the dashboard page(file:///C:/Users/ammabrouk/eclips
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: The result of the xpath expression "//*[@id='login_button_container']/div/form/div[3]/h3/text()" is: [object Text]. It should be an element.
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'LPCAIQ0797', ip: '192.168.9.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f399cd8d110c0c68fe829ae0333c506, findElement {using=xpath, value=//*[@id='login_button_container']/div/form/div[3]/h3/text()}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AMMABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62145/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f399cd8d110c0c68fe829ae0333c506]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression "//*[@id='login_button_container']/div/form/div[3]/h3/text()" is: [object Text]. It should be an element.
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'LPCAIQ0797', ip: '192.168.9.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f399cd8d110c0c68fe829ae0333c506, findElement {using=xpath, value=//*[@id='login_button_container']/div/form/div[3]/h3/text()}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AMMABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62145/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f399cd8d110c0c68fe829ae0333c506
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at Pages.LoginPage.getErrorMessage(LoginPage.java:22)
-at stepDefinitions.LoginSteps.error_message_will_be_displayed(LoginSteps.java:27)
-at ✽.error message will be displayed(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:17)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner.TestRunner@3b69e7d1]" started-at="2022-09-05T12:49:32 EET" name="tearDown" finished-at="2022-09-05T12:49:32 EET" duration-ms="309" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner.TestRunner@4116aac9]" started-at="2022-09-14T19:29:19 EET" name="tearDown" finished-at="2022-09-14T19:29:19 EET" duration-ms="563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Runner.TestRunner@3b69e7d1]" started-at="2022-09-05T12:49:32 EET" name="SetUp" finished-at="2022-09-05T12:49:34 EET" duration-ms="1911" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:Runner.TestRunner@4116aac9]" started-at="2022-09-14T19:29:19 EET" name="SetUp" finished-at="2022-09-14T19:29:24 EET" duration-ms="4417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@3b69e7d1]" started-at="2022-09-05T12:49:34 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-05T12:49:35 EET" duration-ms="206" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@4116aac9]" started-at="2022-09-14T19:29:24 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T19:29:24 EET" duration-ms="365" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -164,60 +86,18 @@ at ✽.error message will be displayed(file:///C:/Users/ammabrouk/eclipse-worksp
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: The result of the xpath expression "//*[@id='login_button_container']/div/form/div[3]/h3/text()" is: [object Text]. It should be an element.
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'LPCAIQ0797', ip: '192.168.9.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da7665fba71adf64ad6dab6b37043ab8, findElement {using=xpath, value=//*[@id='login_button_container']/div/form/div[3]/h3/text()}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AMMABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62168/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: da7665fba71adf64ad6dab6b37043ab8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression "//*[@id='login_button_container']/div/form/div[3]/h3/text()" is: [object Text]. It should be an element.
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'LPCAIQ0797', ip: '192.168.9.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da7665fba71adf64ad6dab6b37043ab8, findElement {using=xpath, value=//*[@id='login_button_container']/div/form/div[3]/h3/text()}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AMMABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62168/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: da7665fba71adf64ad6dab6b37043ab8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at Pages.LoginPage.getErrorMessage(LoginPage.java:22)
-at stepDefinitions.LoginSteps.error_message_will_be_displayed(LoginSteps.java:27)
-at ✽.error message will be displayed(file:///C:/Users/ammabrouk/eclipse-workspace/CucumberJava/src/test/java/features/Login.feature:17)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner.TestRunner@3b69e7d1]" started-at="2022-09-05T12:49:35 EET" name="tearDown" finished-at="2022-09-05T12:49:35 EET" duration-ms="307" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Runner.TestRunner@4116aac9]" started-at="2022-09-14T19:29:24 EET" name="tearDown" finished-at="2022-09-14T19:29:25 EET" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@3b69e7d1]" started-at="2022-09-05T12:49:35 EET" name="tearDownClass" finished-at="2022-09-05T12:49:35 EET" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@4116aac9]" started-at="2022-09-14T19:29:25 EET" name="tearDownClass" finished-at="2022-09-14T19:29:27 EET" duration-ms="1888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- Runner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>
