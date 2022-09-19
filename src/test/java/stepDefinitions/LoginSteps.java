@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 
 import Pages.LoginPage;
@@ -26,6 +27,6 @@ public class LoginSteps extends BaseTest {
 	public void user_is_navigated_to_the_dashboard_page() {
 		 Assert.assertTrue(loginPage.getPageHeader());
 	}
-	
+
 
 }

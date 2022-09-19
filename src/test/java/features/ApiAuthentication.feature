@@ -5,7 +5,7 @@ Feature: as a user I wanna to create user successfully
   Scenario Outline: check the api authentication
     Given request body is set to be <index>
     When user set request header from ".//resources//TestData//Headers.json"
-    Then status code should be 200
+    Then status code should be 2000
 
     Examples: 
       | index |

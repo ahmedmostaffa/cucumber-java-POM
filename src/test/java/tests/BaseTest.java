@@ -30,7 +30,7 @@ public class BaseTest extends AbstractTestNGCucumberTests  {
 
 
 
-	@BeforeSuite
+	@BeforeMethod
 	public void SetUp( ) throws InterruptedException {
 		String browser="chrome";
 		if (browser.equalsIgnoreCase("chrome")) {
@@ -55,7 +55,7 @@ public class BaseTest extends AbstractTestNGCucumberTests  {
 	}
 
 	
-	@AfterSuite
+	@AfterMethod
     public void tearDown(){
     	driver.quit();
     	

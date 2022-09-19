@@ -11,28 +11,18 @@ import org.json.simple.parser.ParseException;
 
 public class JsonReader {
 	private JsonReader() {}
-	
+
+
 	public static String getValue(String filePath,String key)  {
-		try {
-			JSONParser jsonParser = new JSONParser();
-			FileReader reader = new FileReader(filePath);
-			Object obj=jsonParser.parse(reader);
-			JSONObject jsonObject=(JSONObject) obj;
-			String value=jsonObject.get(key).toString();
-			return value;
-		}catch (IOException e ) {
-			e.fillInStackTrace();	
-		}catch( ParseException e){
-			e.fillInStackTrace();
-		}
-		return null;
+		JSONObject jsonObject=getJsonObject(filePath);
+		String value=jsonObject.get(key).toString();
+		return value;
 	}
 
 	public static JSONArray getJsonArray(String filePath){
 		try {
-			JSONParser jsonParser = new JSONParser();
-			FileReader reader = new FileReader(filePath);
-			Object obj=jsonParser.parse(reader);
+			JSONObject jsonObject=getJsonObject(filePath);
+			Object obj=(Object) jsonObject;
 			JSONArray jsonArray=(JSONArray) obj;
 			return jsonArray;
 		}catch (Exception e) {
@@ -40,12 +30,10 @@ public class JsonReader {
 		}
 		return null;
 	}
+
 	public static JSONObject getJsonObject(String filePath,String key) {
 		try {
-			JSONParser jsonParser = new JSONParser();
-			FileReader reader = new FileReader(filePath);
-			Object obj=jsonParser.parse(reader);
-			JSONObject jsonObject=(JSONObject) obj;
+			JSONObject jsonObject=getJsonObject(filePath);
 			return (JSONObject) jsonObject.get(key);
 		}catch (Exception e) {
 			e.fillInStackTrace();
@@ -54,10 +42,7 @@ public class JsonReader {
 	}
 	public static JSONArray getJsonArray(String filePath, String key) {
 		try {
-			JSONParser jsonParser = new JSONParser();
-			FileReader reader = new FileReader(filePath);
-			Object obj=jsonParser.parse(reader);
-			JSONObject jsonObject=(JSONObject) obj;
+			JSONObject jsonObject=getJsonObject(filePath);
 			JSONArray jsonArray=(JSONArray) jsonObject.get(key);
 			return jsonArray;
 		}catch (Exception e) {
@@ -79,7 +64,9 @@ public class JsonReader {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(getJsonArray(".//resources//TestData//MOCK_DATA.json").toArray()[0]);
+		//System.out.println(getJsonArray(".//resources//TestData//MOCK_DATA.json").toArray()[0]);
+		String value=JsonReader.getValue(".//resources//TestData//Headers.json","GET_LIST_OF_USERS").toString();
+		System.out.println(value);
 	}
 	
 

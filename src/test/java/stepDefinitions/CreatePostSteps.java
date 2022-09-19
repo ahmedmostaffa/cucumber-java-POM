@@ -12,6 +12,9 @@ import static io.restassured.RestAssured.*;
 
 import tests.BaseApiTest;
 import utilities.JsonReader;
+
+import java.time.Instant;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import static io.restassured.RestAssured.given;
@@ -30,15 +33,15 @@ public class CreatePostSteps {
     }
 
     @When("request body is set to be {string}")
-    public void requestBodyIsSetToBe(String arg0) {
+    public void requestBodyIsSetToBe(String arg0)
+    {
         response.body(JsonReader.getJsonObject(arg0).toJSONString());
     }
 
     @Then("response status code should be {int}")
     public void responseStatusCodeShouldBe(int arg0) {
         response.then().statusCode(arg0);
-       
-      
+        System.out.println(String.valueOf(Instant.now().getEpochSecond()));
             
     }
 }

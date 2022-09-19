@@ -20,11 +20,11 @@ import tests.BaseTest;
 	,glue={"stepDefinitions"}
 	,monochrome=true
 	,plugin={"json:target/cucumber.json"}
-	,tags= "@login"
+	,tags= "@login or @register"
 	,publish=true
 )
 
 
-public class TestRunner extends AbstractTestNGCucumberTests {
+public class TestRunner extends BaseTest {
 
 }
