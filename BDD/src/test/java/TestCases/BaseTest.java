@@ -20,7 +20,7 @@ public class BaseTest extends AbstractTestNGCucumberTests {
 	public static WebDriver driver;
 	//static String login_url="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 	//public static ThreadLocal<WebDriver> drivers = new ThreadLocal<WebDriver>();
-
+	String url="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 	@BeforeSuite
 	@Parameters({"browser"})
 	public void startDriver(@Optional("chrome") String browserName) {
@@ -35,7 +35,7 @@ public class BaseTest extends AbstractTestNGCucumberTests {
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.navigate().to("https://www.saucedemo.com/");
+		driver.navigate().to(url);
 
 	}
 
