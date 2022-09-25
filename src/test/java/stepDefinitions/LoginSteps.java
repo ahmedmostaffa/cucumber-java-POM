@@ -25,7 +25,7 @@ public class LoginSteps extends BaseTest {
 	}
 	@Then("user is navigated to the dashboard page")
 	public void user_is_navigated_to_the_dashboard_page() {
-		 Assert.assertTrue(loginPage.getPageHeader());
+		 Assert.assertFalse(loginPage.getPageHeader());
 	}
 
 

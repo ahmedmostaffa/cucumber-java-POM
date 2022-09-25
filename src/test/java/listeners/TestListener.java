@@ -27,7 +27,7 @@ public class TestListener  extends BaseTest implements  ITestListener{
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
-		Shutterbug.shootPage(driver).save();;
+		Shutterbug.shootPage(driver).save();
 		System.out.println("take screenshot on faield tests");
 	}
 

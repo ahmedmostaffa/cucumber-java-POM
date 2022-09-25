@@ -3,6 +3,8 @@ package Runner;
 
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 
 
@@ -17,14 +19,20 @@ import tests.BaseTest;
 
 
 @CucumberOptions(features="src/test/java/features"
-	,glue={"stepDefinitions"}
+	,glue={"stepDefinitions","hooks"}
 	,monochrome=true
-	,plugin={"json:target/cucumber.json"}
-	,tags= "@login or @register"
+	,plugin={"json:target/cucumber.json"
+		,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+	,tags= "@login"
 	,publish=true
 )
 
 
 public class TestRunner extends BaseTest {
+	@DataProvider(parallel = false)
+	@Override
+	public Object[][] scenarios() {
+		return super.scenarios();
+	}
 
 }
