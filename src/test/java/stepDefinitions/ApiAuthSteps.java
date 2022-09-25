@@ -17,7 +17,7 @@ public class ApiAuthSteps {
     RequestSpecification response;
 
     @Given("request body is set to be {int}")
-   
+
     public void request_body_is_set_to_be(Integer index) {
         RestAssured.baseURI="https://simple-books-api.glitch.me";
         response=RestAssured
